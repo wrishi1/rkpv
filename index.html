@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAJ KITCHEN POINT VADODARA - Customized Luxury Kitchens & Furniture</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#F3E5AB',
+                            500: '#D4AF37',
+                            600: '#AA7C11',
+                            700: '#8B6508'
+                        },
+                        darkBg: '#0b0f17',
+                        cardBg: '#151c28',
+                        cardHover: '#1c2637'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF099 0%, #D4AF37 50%, #996515 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to right, #D4AF37, #8B6508) 1;
+        }
+        .gold-btn-bg {
+            background: linear-gradient(135deg, #E5BA43 0%, #D4AF37 50%, #AA7C11 100%);
+        }
+        .gold-btn-bg:hover {
+            background: linear-gradient(135deg, #F3E5AB 0%, #E5BA43 50%, #D4AF37 100%);
+        }
+        /* Glassmorphic effect */
+        .glass-panel {
+            background: rgba(21, 28, 40, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans antialiased overflow-x-hidden selection:bg-gold-500 selection:text-black">
+
+    <div class="bg-gradient-to-r from-gold-700 via-gold-500 to-gold-700 text-black font-semibold text-xs md:text-sm py-2 px-4 text-center tracking-wide flex justify-between items-center z-50 relative">
+        <div class="hidden md:flex items-center space-x-4 mx-auto">
+            <span><i class="fa-solid fa-location-dot mr-1"></i> Vadodara, Gujarat, India</span>
+            <span>•</span>
+            <span><i class="fa-solid fa-shield-halved mr-1"></i> Waterproof & Termite-Proof Modular Interiors</span>
+            <span>•</span>
+            <span><i class="fa-solid fa-phone mr-1"></i> Direct Hotline: +91 98765 43210</span>
+        </div>
+        <div class="md:hidden mx-auto flex items-center space-x-2">
+            <i class="fa-solid fa-star text-xs"></i>
+            <span>Customized Luxury Furniture in Vadodara</span>
+        </div>
+    </div>
+
+    <nav class="sticky top-0 z-40 bg-darkBg/90 backdrop-blur-md border-b border-gold-500/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo & Brand Name -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <!-- Custom SVG replica of RKP emblem from profile image -->
+                    <div class="relative w-12 h-12 flex-shrink-0">
+                        <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-[0_0_8px_rgba(212,175,55,0.4)]">
+                            <circle cx="50" cy="50" r="46" fill="#111" stroke="url(#goldGradient)" stroke-width="4"/>
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#222" stroke-width="2"/>
+                            <path d="M 25 50 A 25 25 0 0 1 75 50" fill="none" stroke="url(#goldGradient)" stroke-width="2.5" stroke-dasharray="2 2"/>
+                            <!-- Stars -->
+                            <polygon points="50,18 52,23 57,23 53,26 55,31 50,28 45,31 47,26 43,23 48,23" fill="#D4AF37"/>
+                            <polygon points="72,32 73,35 76,35 74,37 75,40 72,38 69,40 70,37 68,35 71,35" fill="#D4AF37" transform="scale(0.7) translate(30, 0)"/>
+                            <!-- RKP Text -->
+                            <text x="50" y="58" font-family="'Playfair Display', Georgia, serif" font-weight="900" font-size="22" fill="url(#goldGradient)" text-anchor="middle" letter-spacing="1">RKP</text>
+                            <text x="50" y="70" font-family="sans-serif" font-weight="600" font-size="6" fill="#aaa" text-anchor="middle" letter-spacing="0.5">RAJ KITCHEN POINT</text>
+                            <defs>
+                                <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FFF099"/>
+                                    <stop offset="50%" stop-color="#D4AF37"/>
+                                    <stop offset="100%" stop-color="#AA7C11"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serif text-lg sm:text-xl font-bold tracking-wider gold-gradient-text">RAJ KITCHEN POINT</span>
+                        <span class="text-[10px] sm:text-xs text-gray-400 font-semibold tracking-widest uppercase">VADODARA • LUXURY INTERIORS</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden lg:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#home" class="text-gold-400 hover:text-white transition-colors">Home</a>
+                    <a href="#materials" class="text-gray-300 hover:text-gold-400 transition-colors">Materials</a>
+                    <a href="#gallery" class="text-gray-300 hover:text-gold-400 transition-colors">Gallery</a>
+                    <a href="#why-us" class="text-gray-300 hover:text-gold-400 transition-colors">Why Choose Us</a>
+                    <a href="#contact" class="text-gray-300 hover:text-gold-400 transition-colors">Contact</a>
+                </div>
+
+                <!-- Desktop Header Action Buttons -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="https://wa.me/919876543210?text=Hi%20Raj%20Kitchen%20Point,%20I%20would%20like%20a%20free%20quote%20for%20my%20kitchen/furniture." target="_blank" class="flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all shadow-lg hover:shadow-green-900/40">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp Us</span>
+                    </a>
+                    <a href="#contact" class="gold-btn-bg text-black px-5 py-2 rounded-lg text-sm font-bold tracking-wide shadow-lg shadow-gold-500/20 hover:scale-105 transition-all">
+                        Get Free Quote
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-gold-400 p-2 focus:outline-none" aria-label="Toggle Navigation">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-cardBg/95 border-b border-gold-500/20 px-4 pt-3 pb-6 space-y-3">
+            <a href="#home" class="mobile-link block py-2 px-3 rounded-md text-gold-400 font-medium">Home</a>
+            <a href="#materials" class="mobile-link block py-2 px-3 rounded-md text-gray-300 hover:bg-darkBg hover:text-gold-400">Materials & Specialties</a>
+            <a href="#gallery" class="mobile-link block py-2 px-3 rounded-md text-gray-300 hover:bg-darkBg hover:text-gold-400">Design Portfolio</a>
+            <a href="#why-us" class="mobile-link block py-2 px-3 rounded-md text-gray-300 hover:bg-darkBg hover:text-gold-400">Why RKP Vadodara</a>
+            <a href="#contact" class="mobile-link block py-2 px-3 rounded-md text-gray-300 hover:bg-darkBg hover:text-gold-400">Contact Us</a>
+            <div class="pt-3 border-t border-gray-800 flex flex-col gap-2">
+                <a href="https://wa.me/919876543210" target="_blank" class="w-full text-center bg-green-600 text-white py-2.5 rounded-lg font-semibold flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp Inquiry
+                </a>
+                <a href="tel:+919876543210" class="w-full text-center border border-gold-500 text-gold-400 py-2.5 rounded-lg font-semibold flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call +91 98765 43210
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-[90vh] flex items-center justify-center pt-12 pb-20 px-4 overflow-hidden">
+        <!-- Background Overlay Image with Modern Blur -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920&auto=format&fit=crop" alt="Luxury Modular Kitchen Vadodara" class="w-full h-full object-cover object-center opacity-25 filter scale-105 transform transition-transform duration-10000 hover:scale-100">
+            <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/80 to-transparent"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto z-10 grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                <!-- Social Proof Tag -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel border border-gold-500/30 text-gold-400 text-xs sm:text-sm font-semibold tracking-wide shadow-inner">
+                    <span class="flex h-2 w-2 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-gold-500"></span>
+                    </span>
+                    <span>3,000+ Happy Homeowners in Vadodara & Gujarat</span>
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight">
+                    Customised Luxury <br class="hidden sm:inline">
+                    <span class="gold-gradient-text">Furniture For Your Home 🏠❤️</span>
+                </h1>
+
+                <p class="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Transforming spaces with 100% waterproof UPVC, Solid PVC, HDMR Green Ply, Classic Wooden craft & High-Gloss Acrylic finishes. Designed for lifelong elegance and durability.
+                </p>
+
+                <!-- Key Highlights Icons -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 max-w-lg mx-auto lg:mx-0 text-xs sm:text-sm text-gray-300">
+                    <div class="flex items-center gap-2 bg-cardBg/60 p-2.5 rounded-lg border border-gold-500/10">
+                        <i class="fa-solid fa-droplet-slash text-gold-500 text-base"></i>
+                        <span>100% Waterproof</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-cardBg/60 p-2.5 rounded-lg border border-gold-500/10">
+                        <i class="fa-solid fa-bug-slash text-gold-500 text-base"></i>
+                        <span>Termite Proof</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-cardBg/60 p-2.5 rounded-lg border border-gold-500/10">
+                        <i class="fa-solid fa-certificate text-gold-500 text-base"></i>
+                        <span>10+ Yr Warranty</span>
+                    </div>
+                </div>
+
+                <!-- Call to action CTA group -->
+                <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+                    <a href="#materials" class="gold-btn-bg text-black font-bold px-8 py-4 rounded-xl text-center shadow-xl shadow-gold-500/10 hover:shadow-gold-500/30 transform hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+                        <span>Explore Materials</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="https://wa.me/919876543210?text=Hi!%20I%20am%20interested%20in%20custom%20furniture%20for%20my%20home." target="_blank" class="glass-panel text-white font-semibold px-8 py-4 rounded-xl text-center border border-gold-500/40 hover:bg-gold-500/10 transition-all flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-green-500 text-xl"></i>
+                        <span>Instant WhatsApp Chat</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Inquiry Card on Hero -->
+            <div class="lg:col-span-5">
+                <div class="glass-panel p-6 sm:p-8 rounded-2xl shadow-2xl relative border border-gold-500/30">
+                    <div class="absolute -top-3 right-6 bg-gold-500 text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Free Design Consultation
+                    </div>
+                    <h3 class="font-serif text-xl sm:text-2xl font-bold text-white mb-2">Get Your Custom Quote</h3>
+                    <p class="text-xs text-gray-400 mb-6">Share your dimensions or requirements & get a estimated cost quote within 2 hours.</p>
+
+                    <form id="hero-quote-form" onsubmit="handleQuoteSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs text-gray-300 font-medium mb-1">Your Name *</label>
+                            <input type="text" required placeholder="e.g. Rajesh Shah" class="w-full bg-darkBg/90 border border-gray-700 focus:border-gold-500 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs text-gray-300 font-medium mb-1">Phone / WhatsApp Number *</label>
+                            <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-darkBg/90 border border-gray-700 focus:border-gold-500 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs text-gray-300 font-medium mb-1">Preferred Material / Type</label>
+                            <select class="w-full bg-darkBg/90 border border-gray-700 focus:border-gold-500 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none transition-colors">
+                                <option value="UPVC Furniture">UPVC / UPVC PVC Laminate</option>
+                                <option value="Solid PVC">Solid PVC Modular Furniture</option>
+                                <option value="HDMR Green Ply">HDMR Green Ply Furniture</option>
+                                <option value="Wooden">Wooden & Custom Joinery</option>
+                                <option value="Acrylic Finish">High Gloss Acrylic Finish</option>
+                                <option value="Wall Panel & Decor">Wall Panels & Complete Interior</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs text-gray-300 font-medium mb-1">Project Details / Message</label>
+                            <textarea rows="2" placeholder="e.g. Need L-shape Modular Kitchen & 2 Wardrobes in Alkapuri Vadodara" class="w-full bg-darkBg/90 border border-gray-700 focus:border-gold-500 rounded-lg px-4 py-2 text-sm text-white focus:outline-none transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full gold-btn-bg text-black font-bold py-3 rounded-lg shadow-lg hover:brightness-110 transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Send Quote Request</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="materials" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs uppercase tracking-widest text-gold-400 font-semibold mb-2">Our Material Expertise</h2>
+            <p class="text-3xl sm:text-4xl font-serif font-bold text-white">Crafted With Premium Grade Materials</p>
+            <div class="w-20 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            <p class="text-gray-400 mt-4 text-sm sm:text-base">
+                From 100% waterproof UPVC solutions to high-gloss acrylic finishes and certified HDMR Green Ply, we craft interiors tailored to Vadodara's climate and modern aesthetic.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1: UPVC & UPVC PVC Laminate -->
+            <div class="bg-cardBg rounded-2xl overflow-hidden border border-gray-800 hover:border-gold-500/50 transition-all duration-300 group hover:-translate-y-2 flex flex-col justify-between">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=800&auto=format&fit=crop" alt="UPVC Kitchen Vadodara" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-gold-500 text-black text-xs font-bold px-3 py-1 rounded-full">Top Seller</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold font-serif text-white mb-2 group-hover:text-gold-400 transition-colors">UPVC & PVC Laminate</h3>
+                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                            100% Waterproof and fire-retardant material. Perfect for kitchen sink cabinets and areas exposed to moisture. Zero maintenance required.
+                        </p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Lifetime Anti-Termite & Borer guarantee</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Seamless PVC laminate pressing finish</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Easy wipe-clean surfaces</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/919876543210?text=I%20am%20interested%20in%20UPVC%20PVC%20Laminate%20Furniture" target="_blank" class="inline-flex items-center gap-2 text-gold-400 text-sm font-semibold hover:text-white transition-colors">
+                        <span>Inquire UPVC Designs</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2: Solid PVC Furniture -->
+            <div class="bg-cardBg rounded-2xl overflow-hidden border border-gray-800 hover:border-gold-500/50 transition-all duration-300 group hover:-translate-y-2 flex flex-col justify-between">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" alt="Solid PVC Furniture" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-gray-800 text-gold-400 text-xs font-bold px-3 py-1 rounded-full border border-gold-500/30">Durable & Light</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold font-serif text-white mb-2 group-hover:text-gold-400 transition-colors">Solid PVC Furniture</h3>
+                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                            Heavy-duty solid PVC boards engineered for modern modular kitchen boxes, vanity units, and storage cabinets that never warp or swell.
+                        </p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Highly resilient to steam & boiling water</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Lightweight with maximum load capacity</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Eco-friendly recyclable material</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/919876543210?text=I%20am%20interested%20in%20Solid%20PVC%20Furniture" target="_blank" class="inline-flex items-center gap-2 text-gold-400 text-sm font-semibold hover:text-white transition-colors">
+                        <span>Inquire Solid PVC</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3: Wooden Furniture & Craft -->
+            <div class="bg-cardBg rounded-2xl overflow-hidden border border-gray-800 hover:border-gold-500/50 transition-all duration-300 group hover:-translate-y-2 flex flex-col justify-between">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?q=80&w=800&auto=format&fit=crop" alt="Wooden Furniture Vadodara" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-gray-800 text-gold-400 text-xs font-bold px-3 py-1 rounded-full border border-gold-500/30">Classic Craft</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold font-serif text-white mb-2 group-hover:text-gold-400 transition-colors">Wooden Furniture</h3>
+                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                            Timeless solid wood and natural veneer craftsmanship for majestic wardrobes, living room TV units, bedroom furniture, and main doors.
+                        </p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Premium teak, hardwood & veneer finish</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Custom carving & bespoke dimensions</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Rich hand-rubbed PU polish</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/919876543210?text=I%20am%20interested%20in%20Wooden%20Furniture" target="_blank" class="inline-flex items-center gap-2 text-gold-400 text-sm font-semibold hover:text-white transition-colors">
+                        <span>Inquire Wooden Craft</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4: HDMR Green Ply -->
+            <div class="bg-cardBg rounded-2xl overflow-hidden border border-gray-800 hover:border-gold-500/50 transition-all duration-300 group hover:-translate-y-2 flex flex-col justify-between">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=800&auto=format&fit=crop" alt="HDMR Green Ply Furniture" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-green-900 text-green-300 text-xs font-bold px-3 py-1 rounded-full">High Moisture Resistant</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold font-serif text-white mb-2 group-hover:text-gold-400 transition-colors">HDMR Green Ply</h3>
+                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                            High-Density Moisture-Resistant board certified with Green Ply technology. Superb screw holding strength for heavy kitchen drawers.
+                        </p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Superior density & extreme load strength</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Termite and fungus protected formulation</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Ideal base for laminates & acrylic sheets</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/919876543210?text=I%20am%20interested%20in%20HDMR%20Green%20Ply%20Furniture" target="_blank" class="inline-flex items-center gap-2 text-gold-400 text-sm font-semibold hover:text-white transition-colors">
+                        <span>Inquire HDMR Green Ply</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5: Acrylic Finish -->
+            <div class="bg-cardBg rounded-2xl overflow-hidden border border-gray-800 hover:border-gold-500/50 transition-all duration-300 group hover:-translate-y-2 flex flex-col justify-between">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=800&auto=format&fit=crop" alt="Acrylic Modular Kitchen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-gold-500 text-black text-xs font-bold px-3 py-1 rounded-full">High Gloss Luxury</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold font-serif text-white mb-2 group-hover:text-gold-400 transition-colors">Acrylic Finish</h3>
+                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                            Ultra-smooth mirror-like high-gloss finish that gives your kitchen a sleek, contemporary European luxury look.
+                        </p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Mirror reflection & rich color depth</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Scratch-resistant coating layer</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Wide array of solid colors & metallic tones</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/919876543210?text=I%20am%20interested%20in%20Acrylic%20Finish%20Kitchens" target="_blank" class="inline-flex items-center gap-2 text-gold-400 text-sm font-semibold hover:text-white transition-colors">
+                        <span>Inquire Acrylic Kitchens</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 6: Wall Panels & Interior Fit-outs -->
+            <div class="bg-cardBg rounded-2xl overflow-hidden border border-gray-800 hover:border-gold-500/50 transition-all duration-300 group hover:-translate-y-2 flex flex-col justify-between">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=800&auto=format&fit=crop" alt="Wall Panels Vadodara" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-gray-800 text-gold-400 text-xs font-bold px-3 py-1 rounded-full border border-gold-500/30">Interior Elegance</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold font-serif text-white mb-2 group-hover:text-gold-400 transition-colors">Wall Panels & Paneling</h3>
+                        <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                            Decorative charcoal louvers, fluted PVC panels, and acoustic wood slat wall treatments for stunning living room and bedroom accent walls.
+                        </p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Quick 1-day installation process</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Moisture-proof wall cladding</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Accent LED strip light integration</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/919876543210?text=I%20am%20interested%20in%20Wall%20Panels" target="_blank" class="inline-flex items-center gap-2 text-gold-400 text-sm font-semibold hover:text-white transition-colors">
+                        <span>Inquire Wall Panels</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-xs uppercase tracking-widest text-gold-400 font-semibold">Our Works in Vadodara</span>
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-1">Design Gallery & Client Projects</h2>
+            <div class="w-20 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Gallery Filter Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-10">
+            <button onclick="filterGallery('all', this)" class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gold-500 text-black shadow-md transition-all">All Projects</button>
+            <button onclick="filterGallery('kitchen', this)" class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-cardBg text-gray-300 border border-gray-800 hover:border-gold-500 transition-all">Modular Kitchens</button>
+            <button onclick="filterGallery('wardrobe', this)" class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-cardBg text-gray-300 border border-gray-800 hover:border-gold-500 transition-all">Wardrobes</button>
+            <button onclick="filterGallery('panel', this)" class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-cardBg text-gray-300 border border-gray-800 hover:border-gold-500 transition-all">Wall Panels & TV Units</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+            
+            <!-- Item 1 -->
+            <div class="gallery-item kitchen bg-cardBg rounded-xl overflow-hidden border border-gray-800 group relative">
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=800&auto=format&fit=crop" alt="Acrylic Modular Kitchen Vadodara" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-darkBg/90 via-darkBg/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                    <span class="text-xs text-gold-400 font-bold uppercase">Modular Kitchen</span>
+                    <h4 class="text-lg font-bold text-white font-serif">High-Gloss Acrylic L-Shape Kitchen</h4>
+                    <p class="text-xs text-gray-300">Installed in Vasna Road, Vadodara</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="gallery-item wardrobe bg-cardBg rounded-xl overflow-hidden border border-gray-800 group relative">
+                <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=800&auto=format&fit=crop" alt="Modern Wardrobe Vadodara" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-darkBg/90 via-darkBg/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                    <span class="text-xs text-gold-400 font-bold uppercase">Bedroom Wardrobe</span>
+                    <span class="text-lg font-bold text-white font-serif">HDMR Green Ply Sliding Wardrobe</span>
+                    <p class="text-xs text-gray-300">Installed in Alkapuri, Vadodara</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="gallery-item panel bg-cardBg rounded-xl overflow-hidden border border-gray-800 group relative">
+                <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=800&auto=format&fit=crop" alt="TV Unit Wall Panel Vadodara" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-darkBg/90 via-darkBg/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                    <span class="text-xs text-gold-400 font-bold uppercase">Living Room</span>
+                    <h4 class="text-lg font-bold text-white font-serif">Fluted PVC Louvre Wall Panel & TV Unit</h4>
+                    <p class="text-xs text-gray-300">Installed in Gotri, Vadodara</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="gallery-item kitchen bg-cardBg rounded-xl overflow-hidden border border-gray-800 group relative">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop" alt="UPVC Waterproof Kitchen" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-darkBg/90 via-darkBg/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                    <span class="text-xs text-gold-400 font-bold uppercase">Modular Kitchen</span>
+                    <h4 class="text-lg font-bold text-white font-serif">100% Waterproof UPVC Laminate Kitchen</h4>
+                    <p class="text-xs text-gray-300">Installed in Manjalpur, Vadodara</p>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="gallery-item wardrobe bg-cardBg rounded-xl overflow-hidden border border-gray-800 group relative">
+                <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=800&auto=format&fit=crop" alt="Solid Wood Wardrobe" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-darkBg/90 via-darkBg/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                    <span class="text-xs text-gold-400 font-bold uppercase">Wardrobe & Storage</span>
+                    <h4 class="text-lg font-bold text-white font-serif">Wooden Grain Finish Storage Closet</h4>
+                    <p class="text-xs text-gray-300">Installed in Akota, Vadodara</p>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="gallery-item panel bg-cardBg rounded-xl overflow-hidden border border-gray-800 group relative">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" alt="Foyer Wall Paneling" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-darkBg/90 via-darkBg/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                    <span class="text-xs text-gold-400 font-bold uppercase">Wall Paneling</span>
+                    <h4 class="text-lg font-bold text-white font-serif">Luxury Foyer Accent Paneling</h4>
+                    <p class="text-xs text-gray-300">Installed in Bhayli, Vadodara</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="why-us" class="py-20 bg-cardBg/50 relative border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs uppercase tracking-widest text-gold-400 font-semibold">The RKP Vadodara Advantage</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">Why Vadodara Homeowners Trust RAJ KITCHEN POINT</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        We don't just supply furniture; we engineer durable, functional living environments built to last decades without swelling, warping, or insect damage.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-darkBg border border-gray-800">
+                            <div class="w-12 h-12 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center flex-shrink-0 text-gold-400 text-xl">
+                                <i class="fa-solid fa-water"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">100% Water & Termite Proof Options</h4>
+                                <p class="text-xs text-gray-400 mt-1">Our specialized UPVC & Solid PVC materials guarantee lifetime immunity against moisture, rot, and termites.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-darkBg border border-gray-800">
+                            <div class="w-12 h-12 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center flex-shrink-0 text-gold-400 text-xl">
+                                <i class="fa-solid fa-sliders"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Customized Tailored Designs</h4>
+                                <p class="text-xs text-gray-400 mt-1">Every drawer, cabinet width, and wall panel is custom measured to optimize every inch of your room floor plan.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-darkBg border border-gray-800">
+                            <div class="w-12 h-12 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center flex-shrink-0 text-gold-400 text-xl">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Certified HDMR & Authentic Green Ply</h4>
+                                <p class="text-xs text-gray-400 mt-1">We source 100% genuine certified HDMR Green Ply materials with factory hallmark stamps for complete peace of mind.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats / Experience Showcase -->
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                    <div class="glass-panel p-6 rounded-2xl text-center border border-gold-500/20">
+                        <div class="text-4xl font-serif font-bold gold-gradient-text mb-2">3,000+</div>
+                        <div class="text-xs text-gray-300 font-semibold uppercase tracking-wider">Instagram Followers</div>
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl text-center border border-gold-500/20">
+                        <div class="text-4xl font-serif font-bold gold-gradient-text mb-2">260+</div>
+                        <div class="text-xs text-gray-300 font-semibold uppercase tracking-wider">Completed Installations</div>
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl text-center border border-gold-500/20">
+                        <div class="text-4xl font-serif font-bold gold-gradient-text mb-2">100%</div>
+                        <div class="text-xs text-gray-300 font-semibold uppercase tracking-wider">Waterproof Guarantee</div>
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl text-center border border-gold-500/20">
+                        <div class="text-4xl font-serif font-bold gold-gradient-text mb-2">10 Yrs</div>
+                        <div class="text-xs text-gray-300 font-semibold uppercase tracking-wider">Material Warranty</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-gold-500/30 text-center relative overflow-hidden">
+            <div class="max-w-2xl mx-auto space-y-4">
+                <i class="fa-brands fa-instagram text-4xl text-pink-500"></i>
+                <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">Join Our Growing Community in Vadodara</h3>
+                <p class="text-gray-300 text-sm">
+                    Follow <strong>@rajkitchenpoint</strong> for daily kitchen design inspirations, completed site videos, and customer feedback across Vadodara & Gujarat.
+                </p>
+                <div class="pt-2 flex flex-wrap justify-center gap-4">
+                    <a href="https://instagram.com" target="_blank" class="bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-500 text-white font-bold px-6 py-3 rounded-xl shadow-lg hover:brightness-110 transition-all flex items-center gap-2 text-sm">
+                        <i class="fa-brands fa-instagram text-lg"></i> Follow on Instagram (3.0K+)
+                    </a>
+                    <a href="https://wa.me/919876543210" target="_blank" class="bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition-all flex items-center gap-2 text-sm">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Quick Connect
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-12 gap-12">
+            
+            <!-- Contact Details -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-gold-400 font-semibold">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-1">Visit or Contact Us</h2>
+                    <p class="text-gray-400 text-sm mt-2">
+                        Planning a kitchen renovation or new flat interior in Vadodara? Reach out to schedule a free site measurement session.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-lg flex-shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Main Workshop & Showroom</h5>
+                            <p class="text-gray-400 text-xs mt-1">RAJ KITCHEN POINT, Vadodara, Gujarat, India - 390001</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-lg flex-shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Phone & WhatsApp Hotline</h5>
+                            <p class="text-gray-400 text-xs mt-1">+91 98765 43210 / +91 91234 56789</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-lg flex-shrink-0">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Operating Hours</h5>
+                            <p class="text-gray-400 text-xs mt-1">Monday – Sunday: 9:30 AM – 8:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Bar -->
+                <div class="pt-4 border-t border-gray-800">
+                    <h5 class="text-xs uppercase text-gray-400 font-semibold mb-3">Connect With Us</h5>
+                    <div class="flex gap-3">
+                        <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-full bg-cardBg border border-gray-700 flex items-center justify-center text-gray-300 hover:text-pink-500 hover:border-pink-500 transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="w-10 h-10 rounded-full bg-cardBg border border-gray-700 flex items-center justify-center text-gray-300 hover:text-blue-500 hover:border-blue-500 transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="w-10 h-10 rounded-full bg-cardBg border border-gray-700 flex items-center justify-center text-gray-300 hover:text-red-500 hover:border-red-500 transition-colors">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/919876543210" target="_blank" class="w-10 h-10 rounded-full bg-cardBg border border-gray-700 flex items-center justify-center text-gray-300 hover:text-green-500 hover:border-green-500 transition-colors">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="lg:col-span-7">
+                <div class="bg-cardBg p-8 sm:p-10 rounded-2xl border border-gray-800 relative">
+                    <h3 class="text-2xl font-serif font-bold text-white mb-2">Send Direct Requirement</h3>
+                    <p class="text-xs text-gray-400 mb-6">Fill in details below and our lead designer in Vadodara will get back to you with catalogues and sample chips.</p>
+
+                    <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">Full Name *</label>
+                                <input type="text" required placeholder="Your Name" class="w-full bg-darkBg border border-gray-700 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-white focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">Mobile Number *</label>
+                                <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-darkBg border border-gray-700 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-white focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">Location / Area in Vadodara</label>
+                                <input type="text" placeholder="e.g. Alkapuri, Gotri, Vasna Rd" class="w-full bg-darkBg border border-gray-700 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-white focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">Service Required</label>
+                                <select class="w-full bg-darkBg border border-gray-700 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-white focus:outline-none">
+                                    <option>Full Modular Kitchen Setup</option>
+                                    <option>UPVC Waterproof Cabinets</option>
+                                    <option>Bedroom Wardrobes</option>
+                                    <option>Wall Panels & TV Units</option>
+                                    <option>Complete Home Furniture Interior</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">Specific Requirements or Dimensions</label>
+                            <textarea rows="4" placeholder="Tell us about your home layout, preferred colors or expected timeline..." class="w-full bg-darkBg border border-gray-700 focus:border-gold-500 rounded-lg px-4 py-3 text-sm text-white focus:outline-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full gold-btn-bg text-black font-bold py-3.5 rounded-xl shadow-lg hover:scale-[1.01] transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Submit Inquiry</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-darkBg border-t border-gray-800 text-gray-400 text-xs py-10 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8">
+                    <!-- SVG Emblem -->
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <circle cx="50" cy="50" r="46" fill="#111" stroke="#D4AF37" stroke-width="4"/>
+                        <text x="50" y="62" font-family="'Playfair Display', Georgia, serif" font-weight="900" font-size="28" fill="#D4AF37" text-anchor="middle">RKP</text>
+                    </svg>
+                </div>
+                <span class="font-serif text-sm font-bold text-white">RAJ KITCHEN POINT VADODARA</span>
+            </div>
+
+            <p class="text-center md:text-left">
+                &copy; <span id="year"></span> RAJ KITCHEN POINT. Customized Luxury Furniture Specialist in Vadodara, Gujarat. All rights reserved.
+            </p>
+
+            <div class="flex space-x-4">
+                <a href="#materials" class="hover:text-gold-400">UPVC</a>
+                <a href="#materials" class="hover:text-gold-400">Solid PVC</a>
+                <a href="#materials" class="hover:text-gold-400">HDMR Green Ply</a>
+                <a href="#materials" class="hover:text-gold-400">Acrylic</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919876543210?text=Hi%20Raj%20Kitchen%20Point%20Vadodara,%20I%20saw%20your%20website%20and%20want%20to%20discuss%20a%20project." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all z-50 flex items-center justify-center animate-bounce">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Notification Toast Modal -->
+    <div id="toast" class="fixed top-24 right-4 bg-gold-500 text-black px-6 py-4 rounded-xl shadow-2xl font-bold text-sm transform translate-x-full transition-transform duration-300 z-50 flex items-center gap-3">
+        <i class="fa-solid fa-circle-check text-xl"></i>
+        <span id="toast-message">Request Sent Successfully!</span>
+    </div>
+
+    <script>
+        // Set dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Nav Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if(mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Close mobile drawer on link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Gallery Filter Logic
+        function filterGallery(category, btnElement) {
+            document.querySelectorAll('.gallery-filter-btn').forEach(btn => {
+                btn.classList.remove('bg-gold-500', 'text-black');
+                btn.classList.add('bg-cardBg', 'text-gray-300');
+            });
+
+            btnElement.classList.remove('bg-cardBg', 'text-gray-300');
+            btnElement.classList.add('bg-gold-500', 'text-black');
+
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Form Submission Handlers
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-message').textContent = message;
+            toast.classList.remove('translate-x-full');
+            setTimeout(() => {
+                toast.classList.add('translate-x-full');
+            }, 4000);
+        }
+
+        function handleQuoteSubmit(e) {
+            e.preventDefault();
+            showToast("Quote Request Received! We will call you shortly.");
+            e.target.reset();
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            showToast("Inquiry Submitted Successfully!");
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
